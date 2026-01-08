@@ -1,0 +1,403 @@
+
+*** Running vivado
+    with args -log CPU_Project.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_Project.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Jan  6 21:16:40 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source CPU_Project.tcl -notrace
+Command: synth_design -top CPU_Project -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12704
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 844.754 ; gain = 476.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU_Project' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:22]
+INFO: [Synth 8-6157] synthesizing module 'PC2' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:284]
+INFO: [Synth 8-6155] done synthesizing module 'PC2' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:284]
+INFO: [Synth 8-6157] synthesizing module 'PC_Adder' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:297]
+INFO: [Synth 8-6155] done synthesizing module 'PC_Adder' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:297]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_memory' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:306]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_memory' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:306]
+INFO: [Synth 8-6157] synthesizing module 'IFID_Pipeline_Register' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:337]
+INFO: [Synth 8-6155] done synthesizing module 'IFID_Pipeline_Register' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:337]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:347]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:347]
+INFO: [Synth 8-6157] synthesizing module 'Sign_Extender' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:393]
+INFO: [Synth 8-6155] done synthesizing module 'Sign_Extender' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:393]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:406]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:406]
+INFO: [Synth 8-6157] synthesizing module 'Reg_Mux' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:510]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_Mux' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:510]
+INFO: [Synth 8-6157] synthesizing module 'IDEXE_Pipeline_Register' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:525]
+INFO: [Synth 8-6155] done synthesizing module 'IDEXE_Pipeline_Register' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:525]
+INFO: [Synth 8-6157] synthesizing module 'ALUmux' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'ALUmux' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:581]
+INFO: [Synth 8-6157] synthesizing module 'ForwardMux4' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:724]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardMux4' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:724]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:596]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:603]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:596]
+INFO: [Synth 8-6157] synthesizing module 'EXEMEM_Pipeline' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:618]
+INFO: [Synth 8-6155] done synthesizing module 'EXEMEM_Pipeline' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:618]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:647]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:647]
+INFO: [Synth 8-6157] synthesizing module 'MEMEWB_Pipeline_Register' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:681]
+INFO: [Synth 8-6155] done synthesizing module 'MEMEWB_Pipeline_Register' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:681]
+INFO: [Synth 8-6157] synthesizing module 'WbMux' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:707]
+INFO: [Synth 8-6155] done synthesizing module 'WbMux' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:707]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_Project' (0#1) [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:22]
+WARNING: [Synth 8-6014] Unused sequential element efwva_reg was removed.  [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:574]
+WARNING: [Synth 8-6014] Unused sequential element efwvb_reg was removed.  [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:575]
+WARNING: [Synth 8-7129] Port mr[31] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[30] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[29] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[28] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[27] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[26] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[25] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[24] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[23] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[22] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[21] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[20] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[19] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[18] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[17] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[16] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[15] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[14] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[13] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[12] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[11] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[10] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[9] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[8] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[1] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[0] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[31] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[30] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[29] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[28] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[27] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[26] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[25] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[24] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[23] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[22] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[21] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[20] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[19] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[18] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[17] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[16] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[15] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[14] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[13] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[12] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[11] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[10] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[9] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[8] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[7] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[6] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[5] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[4] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[3] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[2] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[1] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qa[0] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[31] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[30] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[29] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[28] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[27] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[26] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[25] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[24] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[23] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[22] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[21] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[20] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[19] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[18] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[17] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[16] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[15] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[14] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[13] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[12] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[11] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[10] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[9] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[8] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[7] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[6] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[5] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[4] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[3] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[2] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[1] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qb[0] in module IDEXE_Pipeline_Register is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm2reg in module Control_Unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port em2reg in module Control_Unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module Instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[31] in module Instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[30] in module Instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[29] in module Instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[28] in module Instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[27] in module Instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[26] in module Instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC[25] in module Instruction_memory is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 952.637 ; gain = 584.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 952.637 ; gain = 584.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 952.637 ; gain = 584.719
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Register_rt_reg' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:446]
+WARNING: [Synth 8-327] inferring latch for variable 'Write_reg_reg' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:445]
+WARNING: [Synth 8-327] inferring latch for variable 'Mem2reg_reg' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:447]
+WARNING: [Synth 8-327] inferring latch for variable 'Write_mem_reg' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:448]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUC_reg' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:451]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v:604]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 952.637 ; gain = 584.719
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   6 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (control_unit/Register_rt_reg) is unused and will be removed from module CPU_Project.
+WARNING: [Synth 8-3332] Sequential element (control_unit/Write_reg_reg) is unused and will be removed from module CPU_Project.
+WARNING: [Synth 8-3332] Sequential element (control_unit/Mem2reg_reg) is unused and will be removed from module CPU_Project.
+WARNING: [Synth 8-3332] Sequential element (control_unit/ALUC_reg[3]) is unused and will be removed from module CPU_Project.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1163.285 ; gain = 795.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------------+-----------+----------------------+----------------+
+|CPU_Project | myDataMemory/memory_reg | Implied   | 64 x 32              | RAM64X1S x 32  | 
+|CPU_Project | reg_file/registers_reg  | Implied   | 32 x 32              | RAM32M x 12    | 
++------------+-------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1163.285 ; gain = 795.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------------+-----------+----------------------+----------------+
+|CPU_Project | myDataMemory/memory_reg | Implied   | 64 x 32              | RAM64X1S x 32  | 
+|CPU_Project | reg_file/registers_reg  | Implied   | 32 x 32              | RAM32M x 12    | 
++------------+-------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 1170.258 ; gain = 802.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1358.570 ; gain = 990.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1358.570 ; gain = 990.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1358.570 ; gain = 990.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1358.570 ; gain = 990.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1358.570 ; gain = 990.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1358.570 ; gain = 990.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    24|
+|3     |LUT1     |     4|
+|4     |LUT2     |    70|
+|5     |LUT3     |    37|
+|6     |LUT5     |    65|
+|7     |LUT6     |    37|
+|8     |RAM32M   |    10|
+|9     |RAM32X1D |     4|
+|10    |RAM64X1S |    12|
+|11    |FDRE     |   225|
+|12    |LD       |    35|
+|13    |IBUF     |     1|
+|14    |OBUF     |   448|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------------------+-------------------------+------+
+|      |Instance                      |Module                   |Cells |
++------+------------------------------+-------------------------+------+
+|1     |top                           |                         |   974|
+|2     |  ID_EX                       |IDEXE_Pipeline_Register  |   203|
+|3     |  IF_ID                       |IFID_Pipeline_Register   |    47|
+|4     |  control_unit                |Control_Unit             |     3|
+|5     |  myALU                       |ALU                      |    48|
+|6     |  myDataMemory                |Data_Memory              |    12|
+|7     |  my_EXEMEM_Pipeline          |EXEMEM_Pipeline          |   102|
+|8     |  my_MEMEWB_Pipeline_Register |MEMEWB_Pipeline_Register |    47|
+|9     |  program_counter             |PC2                      |    46|
+|10    |  reg_file                    |Register_File            |    14|
++------+------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1358.570 ; gain = 990.652
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 132 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1358.570 ; gain = 990.652
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1358.570 ; gain = 990.652
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1372.727 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 85 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 26 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1488.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 61 instances were transformed.
+  LD => LDCE: 35 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (inverted pins: WCLK) (RAMS64E): 12 instances
+
+Synth Design complete | Checksum: afc038
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1488.758 ; gain = 1122.785
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1488.758 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/isjoe/CPU_Project/CPU_Project.runs/synth_1/CPU_Project.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file CPU_Project_utilization_synth.rpt -pb CPU_Project_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  6 21:17:18 2026...

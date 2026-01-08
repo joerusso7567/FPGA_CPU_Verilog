@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/isjoe/CPU_Project/CPU_Project.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sim_1/new/TB_CPU.v,1767147314,verilog,,,,TB_CPU,,,,,,,,
+C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sources_1/new/CPU_Project.v,1767147026,verilog,,C:/Users/isjoe/CPU_Project/CPU_Project.srcs/sim_1/new/TB_CPU.v,,ALU;ALUmux;CPU_Project;Control_Unit;Data_Memory;EXEMEM_Pipeline;ForwardMux4;IDEXE_Pipeline_Register;IFID_Pipeline_Register;Instruction_memory;MEMEWB_Pipeline_Register;PC2;PC_Adder;Reg_Mux;Register_File;Sign_Extender;WbMux,,,,,,,,
