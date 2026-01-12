@@ -5,7 +5,7 @@
 // 
 // Create Date: 04/20/2025 03:12:26 PM
 // Design Name: 
-// Module Name: Lab5_Datapath
+// Module Name: Final_Project
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
