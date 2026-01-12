@@ -24,21 +24,21 @@ module CPU_Project(
 
     output [31:0] PC,        // Program Counter output
     output [31:0] instOut,       // Instruction fetched
-    //output [31:0] aluResult,      // Final ALU output is this used? added for lab4?
-    output ewreg, // why 32bit?
-    output em2reg, // why 32bit?
-    output ewmem, // why 32bit?
+    //output [31:0] aluResult,      // Final ALU output is this used? - added for lab4
+    output ewreg, // not 32bit
+    output em2reg, // not 32bit
+    output ewmem, // not 32bit
     output [3:0] ealuc,
     output ealuimm,
     output [4:0] edestReg,
     output [31:0] eqa,
     output [31:0] eqb,
     output [31:0] eimm32,
-    /// added for lab 4
-    output wwreg, wm2reg, mwreg, mm2reg, mwmem, //these arent outputs? 
-    output [31:0] wdo, wr,  mr, mqb,  //not outputs?       
-    output [4:0] wdestReg, mdestReg, //not an output? 
-    ///added for lab 5
+    // added for lab 4
+    output wwreg, wm2reg, mwreg, mm2reg, mwmem, 
+    output [31:0] wdo, wr,  mr, mqb,      
+    output [4:0] wdestReg, mdestReg,
+    //added for lab 5
     //output [31:0] wbData,
     output [31:0] qa, qb,
     output [1:0] fwdA, fwdB,
@@ -53,13 +53,13 @@ module CPU_Project(
     //wire [5:0] op, func;
     wire [3:0] ALUC;
     wire Write_reg, Mem2reg, Write_mem, ALUimm, Register_rt;
-    //wire CLK2; //??
     
 ////////////////////wires added for lab 4:
     wire [31:0] alu_out, b, mdo;
+    // These are no longer needed, but kept here to see the workflow
     //wire mwreg, mm2reg, mwmem;
     //wire [4:0] mdestReg;
-    //wire [31:0] mr, mqb;
+    //wire [31:0] mr, mqb; 
 ////////////////////wires added for lab 5:
     //wire wwreg;
     //wire wm2reg;
@@ -187,7 +187,7 @@ wire [31:0] wbData;
         .eALUimm(ealuimm),
         .edestReg(edestReg),
            
-        .eqa(eqa), //according ot the project pdf these arent even outputs of IDEXE
+        .eqa(eqa), //according to the project pdf these arent even outputs of IDEXE, but I think thats a typo
         .eqb(eqb), // but they are in the waveform posted on canvas
         
         .eimm32(eimm32),
@@ -551,7 +551,7 @@ module IDEXE_Pipeline_Register(
     //output reg [4:0]   ers,       // NEW: latched rs
     //output reg [4:0]   ert,       // NEW: latched rt
     
-    output reg [31:0] eqa, // according ot the project pdf these arent even outputs of IDEXE but oh well
+    output reg [31:0] eqa, // according to the project pdf these arent even outputs of IDEXE but oh well
     output reg [31:0] eqb,
     output reg [31:0] eimm32,
     
