@@ -4,7 +4,7 @@
 // Engineer: Joseph Russo
 // 
 // Create Date: 05/04/2025
-// Module Name: Project_3_TB
+// Module Name: Final_Project_TB
 //////////////////////////////////////////////////////////////////////////////////
 
 module TB_CPU();
@@ -62,8 +62,6 @@ module TB_CPU();
     // Forwarded inputs into ALU
     wire [31:0] fwvA;
     wire [31:0] fwvB;
-
-    // Instantiate your updated datapath
     
     CPU_Project Datapath(
         .CLK        (CLK),
@@ -109,9 +107,9 @@ module TB_CPU();
         .fwvB(fwvB)
     );
 
-    // Clock generator: 1 ns period
+    // Clock generator: 10 ns period
      initial begin
         CLK = 0;
-        forever #5 CLK = ~CLK; // toggle clock every 1 ns
+        forever #5 CLK = ~CLK; // toggle clock every 10 ns
     end
 endmodule
